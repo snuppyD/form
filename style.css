@@ -1,0 +1,112 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+    box-sizing: border-box;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, #4AC6D2, rgba(136, 136, 206, 0.7) ), url(https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+}
+}
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+form {
+    background: #9E15BF;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+header {
+    display: block;
+    color: white;
+}
+.head {
+        padding: 0 0.625rem;
+        margin-bottom: 1.875rem;
+        
+}
+h1 {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: sans-serif;
+    padding-inline-start: 20px;
+    margin-top: 50px;
+}
+#all {
+    text-align: center;
+}
+@media (min-width: 480px){
+form {
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2.5rem;
+}
+}
+#general-form {
+    margin: 0 auto 1.25rem auto;
+    padding: 1rem;
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.2rem;
+}
+.control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+p {
+    font-weight: 200;
+}
+.input-area {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+.button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: grey;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+button {
+    border: none;
+}
